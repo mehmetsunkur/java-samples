@@ -1,0 +1,23 @@
+
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+dependencies {
+    implementation "classic-project-group:classic"
+    // or
+    // implementation ":classic"
+    // in cse you habe no group definition in ../classic/build/gradle
+
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.2'
+}
+
+application {
+    mainClassName = 'advanced.App'
+}

@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+group = "classic-project-group"
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+
+}
+
+application {
+    mainClassName = 'classic.App'
+}
